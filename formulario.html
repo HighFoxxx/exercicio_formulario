@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="exemplo.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="id_nome">Nome</label>
+            <input type="text" 
+                   id="id_nome" 
+                   name="usuario" 
+                   placeholder="Digite seu nome"
+                   value="Murilo">
+            <br>
+            <label for="id_dtnasc">Data de Nascimento</label>
+            <input type="date" id="id_dtnasc" name="dtnasc">
+            <br>
+            <label for="id_email">E-mail</label>
+            <input type="email" id="id_email" name="email">
+            <br>
+            <label for="id_fone">Telefone</label>
+            <input type="tel" id="id_fone" name="fone" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+            <label for="id_curso">Curso</label>
+            <select id="id_curso" name="curso">
+                <option value="1">ADS</option>
+                <option value="2">CDD</option>
+                <option value="3">GTI</option>
+                <option value="4">SI</option>
+            </select>
+            <br>
+            <label>Semestre</label>
+            <input type="radio" id="id_sem1" name="semestre" value="1">
+            <label for="id_sem1">1º</label>
+            <input type="radio" id="id_sem2" name="semestre" value="2">
+            <label for="id_sem2">2º</label>
+            <input type="radio" id="id_sem3" name="semestre" value="3">
+            <label for="id_sem3">3º</label>
+            <input type="radio" id="id_sem4" name="semestre" value="4">
+            <label for="id_sem4">4º</label>        
+            <input type="radio" id="id_sem5" name="semestre" value="5">
+            <label for="id_sem5">5º</label>
+        </fieldset>        
+        <fieldset>
+            <label for="id_trab">Trabalha?</label>
+            <input type="checkbox" id="id_trab">
+            <br>
+            <label for="id_loctrab">Trabalha?</label>
+            <input type="text" id="id_loctrab" name="loctrab">
+            <br>
+            <textarea rows="5" cols="80">
+
+            </textarea>
+        </fieldset>
+
+        <input type="submit" value="Gravar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+

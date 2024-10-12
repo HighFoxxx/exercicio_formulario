@@ -12,59 +12,49 @@
     <form action="exemplo.php" method="post">
         <fieldset>
             <legend>Dados Pessoais</legend>
-            <label for="id_nome">Nome</label>
+            <label for="id_nome">Nome:</label>
             <input type="text" 
                    id="id_nome" 
                    name="usuario" 
-                   placeholder="Digite seu nome"
-                   value="Murilo">
+                   placeholder="Digite seu nome">
             <br>
-            <label for="id_dtnasc">Data de Nascimento</label>
+            <label for="id_dtnasc">Data de Nascimento:</label>
             <input type="date" id="id_dtnasc" name="dtnasc">
             <br>
-            <label for="id_email">E-mail</label>
-            <input type="email" id="id_email" name="email">
+            <label>Sexo:</label>
+            <input type="radio" id="id_Masculino" name="semestre" value="1">
+            <label for="id_sem1">Masc</label>
+            <input type="radio" id="id_Feminino" name="semestre" value="2">
+            <label for="id_sem2">Fem</label>
+            <input type="radio" id="id_Ninf" name="semestre" value="3">
+            <label for="id_sem3">Prefiro não informar</label>
             <br>
-            <label for="id_fone">Telefone</label>
-            <input type="tel" id="id_fone" name="fone" pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}">
+            <legend>Endereço:</legend>
+            <label for="id_log">Lagradouro:</label>
+            <input type="text" id="id_log" name="log ">
             <br>
-        </fieldset>
-        <fieldset>
-            <legend>Dados Acadêmicos</legend>
-            <label for="id_curso">Curso</label>
-            <select id="id_curso" name="curso">
-                <option value="1">ADS</option>
-                <option value="2">CDD</option>
-                <option value="3">GTI</option>
-                <option value="4">SI</option>
+            <label for="id_Bar">Bairro:</label>
+            <input type="text" id="id_Bar " name="Bar ">
+            <br>
+            <label for="id_cid">Cidade:</label>
+            <input type="text" id="id_cid " name="cid ">
+            <br>
+            <label for="id_estado ">UF:</label>
+            <select id="id_estado" name="estado">
+                <option value="1">DF</option>
+                <option value="2">RS</option>
+                <option value="3">RJ</option>
+                <option value="4">RN</option>
             </select>
             <br>
-            <label>Semestre</label>
-            <input type="radio" id="id_sem1" name="semestre" value="1">
-            <label for="id_sem1">1º</label>
-            <input type="radio" id="id_sem2" name="semestre" value="2">
-            <label for="id_sem2">2º</label>
-            <input type="radio" id="id_sem3" name="semestre" value="3">
-            <label for="id_sem3">3º</label>
-            <input type="radio" id="id_sem4" name="semestre" value="4">
-            <label for="id_sem4">4º</label>        
-            <input type="radio" id="id_sem5" name="semestre" value="5">
-            <label for="id_sem5">5º</label>
-        </fieldset>        
-        <fieldset>
-            <label for="id_trab">Trabalha?</label>
-            <input type="checkbox" id="id_trab">
+            <label for="id_mal ">E-mail:</label>
+            <input type="mail" id="id_mail " name="mail ">
             <br>
-            <label for="id_loctrab">Trabalha?</label>
-            <input type="text" id="id_loctrab" name="loctrab">
             <br>
-            <textarea rows="5" cols="80">
-
-            </textarea>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+    
         </fieldset>
-
-        <input type="submit" value="Gravar">
-        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
